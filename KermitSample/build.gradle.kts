@@ -13,10 +13,11 @@ buildscript {
         google()
         mavenCentral()
         jcenter()
+        maven ("https://dl.bintray.com/kotlin/kotlin-eap")
     }
     dependencies {
         classpath("com.android.tools.build:gradle:3.6.3")
-        classpath(kotlin("gradle-plugin","1.3.72"))
+        classpath(kotlin("gradle-plugin","1.4-M1"))
         classpath("co.touchlab:kotlinnativecocoapods:0.9")
     }
 }

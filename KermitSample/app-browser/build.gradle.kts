@@ -14,6 +14,10 @@ plugins {
     kotlin("js")
 }
 
+repositories {
+    maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+}
+
 kotlin.target.browser {
     runTask {
         outputFileName = "app-browser.js"

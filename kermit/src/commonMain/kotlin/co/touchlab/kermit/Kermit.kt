@@ -142,7 +142,9 @@ class Kermit(
         crossinline message: () -> String,
         loggingCall: Logger.(message: String, tag: String, throwable: Throwable?) -> Unit
     ) {
-        val processedMessage: String by lazy { message() }
+        //TODO replace once m2 comes out https://youtrack.jetbrains.com/issue/KT-37204
+//        val processedMessage: String by lazy { message() }
+        val processedMessage = message()
         loggerList.forEach {
             if (it.isLoggable(severity)) {
                 it.loggingCall(processedMessage, tag, throwable)

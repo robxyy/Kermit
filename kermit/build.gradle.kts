@@ -10,7 +10,7 @@
 
 plugins {
     id("com.android.library") version "3.6.1"
-    kotlin("multiplatform") version "1.3.71"
+    kotlin("multiplatform") version "1.4-M1"
 }
 
 val GROUP: String by project
@@ -25,6 +25,7 @@ repositories {
     google()
     mavenCentral()
     jcenter()
+    maven ("https://dl.bintray.com/kotlin/kotlin-eap")
 }
 
 kotlin {
