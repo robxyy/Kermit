@@ -41,7 +41,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(kotlin("stdlib-common"))
-                api("co.touchlab:kermit:0.1.5-14M1-1")
+                api("co.touchlab:kermit:0.1.7-1.4-M1")
             }
         }
 
@@ -96,7 +96,7 @@ kotlin {
         summary = "Sample for Kermit"
         homepage = "https://www.touchlab.co"
         framework {
-            export("co.touchlab:kermit:0.1.5-14M1-1")
+            export("co.touchlab:kermit:0.1.7-1.4-M1")
             transitiveExport = true
         }
     }
