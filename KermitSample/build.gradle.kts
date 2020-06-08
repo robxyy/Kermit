@@ -17,7 +17,7 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:3.6.3")
-        classpath(kotlin("gradle-plugin","1.4-M1"))
+        classpath(kotlin("gradle-plugin","1.4-M2"))
         classpath("co.touchlab:kotlinnativecocoapods:0.9")
     }
 }

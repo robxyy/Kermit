@@ -16,7 +16,7 @@ import shared
 struct ContentView: View {
     let kermit = Kermit(loggerList: [OSLogLogger(), NSLogLogger()], defaultTag: "iOSTag")
     let common: SampleCommon
-//    let cb = CrashBot()
+    let cb = CrashBot()
 
     init() {
         self.common = SampleCommon(kermit: kermit)
@@ -34,8 +34,7 @@ struct ContentView: View {
                 .font(.title)
             }
             Button(action: {
-                self.kermit.e(withMessage: {"Crash disabled until CrashKios supports 1.4"})
-//               self.cb.goCrash()
+               self.cb.goCrash()
            }){
                Text("Crash").padding()
                .background(Color.blue)
