@@ -21,7 +21,7 @@ pluginManagement {
     repositories {
         google()
         gradlePluginPortal()
-        maven(url = "https://oss.sonatype.org/content/repositories/snapshots/")
+        maven ("https://dl.bintray.com/kotlin/kotlin-eap")
     }
 }
 
