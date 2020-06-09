@@ -11,6 +11,7 @@ jobs:
         inputs:
           workingDirectory: ''
           gradleWrapperFile: 'gradlew'
+          options: '-Dorg.gradle.internal.http.socketTimeout=120000 -Dorg.gradle.internal.http.connectionTimeout=120000'
           gradleOptions: '-Xmx3072m'
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
@@ -32,6 +33,7 @@ jobs:
         inputs:
           workingDirectory: ''
           gradleWrapperFile: 'gradlew'
+          options: '-Dorg.gradle.internal.http.socketTimeout=120000 -Dorg.gradle.internal.http.connectionTimeout=120000'
           gradleOptions: '-Xmx3072m'
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
@@ -53,6 +55,7 @@ jobs:
         inputs:
           workingDirectory: ''
           gradleWrapperFile: 'gradlew'
+          options: '-Dorg.gradle.internal.http.socketTimeout=120000 -Dorg.gradle.internal.http.connectionTimeout=120000'
           gradleOptions: '-Xmx3072m'
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
