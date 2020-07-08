@@ -41,7 +41,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(kotlin("stdlib-common"))
-                api("co.touchlab:kermit:0.1.7-1.4-M2")
+                api("co.touchlab:kermit:0.1.7-1.4-M3")
             }
         }
 
@@ -65,7 +65,7 @@ kotlin {
         }
         val iosMain by sourceSets.getting {
             dependencies {
-                implementation("co.touchlab:crashkios:0.2.2-1.4-M2")
+                implementation("co.touchlab:crashkios:0.2.2-1.4-M3")
             }
         }
         val jsMain by sourceSets.getting {
@@ -95,7 +95,7 @@ kotlin {
         summary = "Sample for Kermit"
         homepage = "https://www.touchlab.co"
         framework {
-            export("co.touchlab:kermit:0.1.7-1.4-M2")
+            export("co.touchlab:kermit:0.1.7-1.4-M3")
             transitiveExport = true
         }
     }
