@@ -18,10 +18,13 @@ repositories {
     maven ("https://dl.bintray.com/kotlin/kotlin-eap")
 }
 
-kotlin.target.browser {
-    runTask {
-        outputFileName = "app-browser.js"
+kotlin.js {
+    browser {
+        runTask {
+            outputFileName = "app-browser.js"
+        }
     }
+    binaries.executable()
 }
 
 dependencies {
