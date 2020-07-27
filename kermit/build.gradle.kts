@@ -10,7 +10,7 @@
 
 plugins {
     id("com.android.library") version "3.6.1"
-    kotlin("multiplatform") version "1.4-M3"
+    kotlin("multiplatform") version "1.4.0-rc"
 }
 
 val GROUP: String by project
@@ -34,7 +34,13 @@ kotlin {
     }
     jvm()
     js() {
-        browser()
+        browser {
+            testTask {
+                useKarma {
+                    useChromeHeadless()
+                }
+            }
+        }
         nodejs()
     }
 
