@@ -4,6 +4,10 @@ Kermit is a Kotlin Multiplatform logging utility with composable log outputs. Th
 
 > Check out [KaMP Kit](https://github.com/touchlab/KaMPKit) to get started developing for Kotlin Multiplatform
 
+> ## **We're Hiring!**
+>
+> Touchlab is looking for a Mobile Developer, with Android/Kotlin experience, who is eager to dive into Kotlin Multiplatform Mobile (KMM) development. Come join the remote-first team putting KMM in production. [More info here](https://go.touchlab.co/careers-gh).
+
 ### Pre-release
 Kermit is in a pre-release stage. We are still working to improve usage and future versions may change the public api.
 
